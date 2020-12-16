@@ -2,6 +2,8 @@
 Solução dos problemas descritos para a vaga de estágio na Polícia Federal, para trabalhar no sistema de Integração e
 Cruzamento de dados Forenses
 
+Problemas resolvidos utilizando o Python versão 3.8.0
+
 ## Problema 1
 ```
   Dado uma lista de dicionários (chave/valor) Python, verifique se existe a chave 'nome', 
