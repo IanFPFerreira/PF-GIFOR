@@ -30,14 +30,15 @@ mapear = str.maketrans(com_acento, sem_acento)
 
 def transforma(nome):
     """
-    Função que recebe uma lista e retorna o valor no index 2 que passou pela
-    função que retira os caracteres especiais, o index 2 corresponde ao nome
-    no arquivo csv
+    Função que recebe uma lista e retorna o valor no index 1 que é tranfomado
+    pela função que retira os caracteres especiais, o index 1 corresponde ao
+    nome no arquivo csv
     """
     return nome[1].translate(mapear)
 
 
-# Função que defini qual arquivo será utilizado
+# Função que defini qual arquivo será utilizado, passando também o parâmetro
+# "encoding='utf-8'", que permite receber um arquivo com caracteres especiais
 with open('dados.csv', encoding='utf-8') as dados_csv:
 
     # Definindo a variável que terá como valor o arquivo csv
@@ -49,7 +50,7 @@ with open('dados.csv', encoding='utf-8') as dados_csv:
     # Definindo uma lista vazia que possuirá cada linha do arquivo csv
     lista_de_dados = []
 
-    # Estrutura de repetição que passará por cada linha do arquivo csv e
+    # Estrutura de repetição que passará por cada linha do arquivo csv
     for linha in dados:
         # Adicionará na 'lista_de_dados' toda a linha no formato de lista,
         # logo, a 'lista_de_dados' será uma lista de listas
@@ -64,7 +65,6 @@ with open('dados.csv', encoding='utf-8') as dados_csv:
         # Cada lista entrará na função 'transforma', o que irá retornar o
         # nome sem caracteres especiais
         nome = transforma(lista)
-
         # Cada nome será adicionado na 'lista_de_nomes'
         lista_de_nomes.append(nome)
 
