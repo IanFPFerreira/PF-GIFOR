@@ -5,33 +5,33 @@
 # Criando uma lista de dicionarios
 lista_dicionario = [
     {'nome': 'Maria', 'idade': 20},
-    {'nome': 'Joao', 'idade': 30},
-    {'nome': 'Italo', 'idade': 40},
+    {'nome': 'João', 'idade': 30},
+    {'nome': 'Ítalo', 'idade': 40},
     {'nome': 'Guilherme', 'idade': 50},
     {'idade': 25},
     {'nome': 'Gabriel', 'idade': 35},
     {'nome': 'Maria', 'idade': 45},
     {'idade': 55},
     {'nome': 'Guilherme', 'idade': 50},
-    {'nome': 'Alvaro', 'idade': 65},
+    {'nome': 'Álvaro', 'idade': 65},
     {'nome': 'Gabriel', 'idade': 35},
 ]
 
-# Criando uma lista vazia
+# Criando uma lista vazia que conterá o valor da chave 'nome'
 lista_valores = []
 
 # Estrutura de repetição que passará por cada dicionário dentro da lista
 for dicionario in lista_dicionario:
 
-    # Estrutura condicional que se o dicionário possui a chave 'nome', se a
-    # condição for verdadeira o valor da chave 'nome' e adicionado à
-    # 'lista_valores'
+    # Estrutura condicional que verifica se o dicionário possui a chave
+    # 'nome', se a condição for verdadeira o valor da chave 'nome' é
+    # adicionado à 'lista_valores'
     if 'nome' in dicionario:
         lista_valores.append(dicionario.get('nome'))
 
 
-# Converto a 'lista_valores' para um conjunto e já converto novamente para uma
-# lista, deste modo é retirado os valores repetidos, já que em conjuntos não
+# A 'lista_valores' é convertida para um conjunto e convertida novamente para
+# uma lista, deste modo é retirado os valores repetidos, já que em conjuntos
 # não pode haver repetição de elementos
 lista_valores = list(set(lista_valores))
 
