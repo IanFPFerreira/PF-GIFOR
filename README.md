@@ -4,6 +4,18 @@ Cruzamento de dados Forenses
 
 Problemas resolvidos utilizando o Python versão 3.8.0
 
+## Como rodar o código
+
+- Linux:
+```
+python3 nome_do_arquivo.py
+```
+
+- Windows:
+```
+python nome_do_arquivo.py
+```
+
 ## Problema 1
 ```
   Dado uma lista de dicionários (chave/valor) Python, verifique se existe a chave 'nome', 
